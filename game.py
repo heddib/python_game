@@ -17,7 +17,7 @@ class Game:
     self.image_groupReverse = pygame.sprite.Group(self.imageReverse)
     self.score = 0
     self.round = 1
-    self.multiplier = 1.5
+    self.multiplier = 0.5
     self.showAnime = False
     self.showAnimeReverse = False
     self.clock = pygame.time.Clock()
@@ -38,12 +38,13 @@ class Game:
       self.ball.ball_dir_Y -= self.multiplier
     if self.round % 5 == 0 and not self.round % 10 == 0:
       self.showAnime = True
-      pygame.mixer.music.load('wow.mp3')
-      pygame.mixer.music.play()
+      # La musique ne fonctionne pas sur Windows (libmpg123-0.dll: Le module spécifié est introuvable. pygame) donc je l'ai enlevé au cas où :(
+      # pygame.mixer.music.load('wow.mp3')
+      # pygame.mixer.music.play()
     if self.round % 10 == 0:
       self.showAnimeReverse = True
-      pygame.mixer.music.load('wow.mp3')
-      pygame.mixer.music.play()
+      # pygame.mixer.music.load('wow.mp3')
+      # pygame.mixer.music.play()
 
   def calc_ball(self):
     if self.ball.ball_Y == 10:
