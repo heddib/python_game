@@ -1,4 +1,4 @@
-import pygame, math, functions
+import pygame, math
 from ball import Ball
 from ImageDance import ImageDance
 from ImageDanceReverse import ImageDanceReverse
