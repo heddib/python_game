@@ -17,4 +17,4 @@ Aucune dépendance autre que Pygame n'est nécessaire.
 
 Utiliser les flèches directionnelles (droite et gauche) pour faire bouger la plateforme.
 
-- Heddi Brahiti
+-- Heddi Brahiti
